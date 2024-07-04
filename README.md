@@ -1,1 +1,1 @@
-# njc-marine_manager
+# wp-njc-marine_manager
