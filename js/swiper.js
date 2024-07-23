@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
   var slider5 = new Swiper(".voice-auto-scroll", {
-    speed: 800,
+    speed: 1000,
     loopedSlides: 8,
     slidesPerView: 1.1,
     breakpoints: {
@@ -95,5 +95,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
       disableOnInteraction: false,
     },
     centeredSlides: true,
+  });
+
+  var swiper = new Swiper(".history-swiper", {
+    slidesPerView: 1.1,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".history-next",
+      prevEl: ".history-prev",
+    },
+    breakpoints: {
+      438: {
+        slidesPerView: 1.4,
+      },
+      833: {
+        slidesPerView: 3.2,
+      },
+    },
   });
 });
