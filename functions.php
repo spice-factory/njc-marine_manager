@@ -596,3 +596,45 @@ function disable_author_archive() {
     exit;
   }
 }
+
+
+function get_theme_image_url($atts) {
+  $atts = shortcode_atts(
+      array(
+          'src' => '',
+      ),
+      $atts,
+      'theme_img_url'
+  );
+
+  if ($atts['src']) {
+      return esc_url(get_template_directory_uri() . $atts['src']);
+  }
+  return '';
+}
+add_shortcode('theme_img_url', 'get_theme_image_url');
+
+// srcset用ショートコード関数
+function get_theme_image_srcset($atts) {
+  $atts = shortcode_atts(
+      array(
+          'srcset' => '',
+      ),
+      $atts,
+      'theme_img_srcset'
+  );
+
+  if ($atts['srcset']) {
+      $srcset_array = explode(', ', $atts['srcset']);
+      $new_srcset = array();
+
+      foreach ($srcset_array as $set) {
+          $set_parts = explode(' ', $set);
+          $new_srcset[] = esc_url(get_template_directory_uri() . $set_parts[0]) . ' ' . esc_attr($set_parts[1]);
+      }
+
+      return implode(', ', $new_srcset);
+  }
+  return '';
+}
+add_shortcode('theme_img_srcset', 'get_theme_image_srcset');
