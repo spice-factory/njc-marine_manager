@@ -238,6 +238,7 @@ function my_wp_kses_allowed_html( $tags, $context ) {
 		wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/main.js',array(), '0.0.6',true);
 		wp_enqueue_script('lottie-js', '//unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',array(), '',true);
 		wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js',array(), '',true);
+    wp_enqueue_script('single-magazine', get_stylesheet_directory_uri() . '/js/single-magazine.js',array(), '',true);
 	}
 	add_action('wp_enqueue_scripts', 'custom_scripts', 11);
 
