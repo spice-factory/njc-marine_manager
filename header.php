@@ -80,6 +80,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="globalNaviMain__item <?php echo ($post_archive_slug == 'magazine') ? 'is-current' : ''; ?>">
             <a class="globalNaviMain__item-link" href="<?php echo site_url(); ?>/magazine/">マガジン</a>
           </li>
+          <li class="globalNaviMain__item <?php echo ($post_archive_slug == 'case') ? 'is-current' : ''; ?>">
+            <a class="globalNaviMain__item-link" href="<?php echo site_url(); ?>/case/">事例</a>
+          </li>
           <li class="globalNaviMain__item <?php echo ($post_archive_slug == 'news') ? 'is-current' : ''; ?>">
             <a class="globalNaviMain__item-link" href="<?php echo site_url(); ?>/news/">お知らせ</a>
           </li>
