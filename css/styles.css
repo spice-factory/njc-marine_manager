@@ -3084,6 +3084,7 @@ footer {
   -moz-column-gap: 0.8rem;
   column-gap: 0.8rem;
   color: #fff !important;
+  text-decoration: none !important;
 }
 
 .blank_link-icon::after {
@@ -3092,8 +3093,8 @@ footer {
   width: 13px;
   height: 13px;
   background-image: url("../img/common/link_icon_b.svg");
-  background-size: cover; /* 画像が要素に収まるようにする */
-  margin-left: 5px; /* テキストとアイコンの間にスペースを追加 */
+  background-size: cover;
+  margin-left: 5px;
 }
 
 .blank_link span {
