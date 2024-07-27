@@ -4684,7 +4684,7 @@ footer {
   margin-right: auto;
 }
 
-h2 span::after {
+.contact-container h2 span::after {
   position: absolute;
   content: "";
   left: 0;
@@ -4703,6 +4703,23 @@ h2 span::after {
 }
 
 /* ==========================================================================
+    download
+========================================================================== */
+.min-wrapper-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 27.6px;
+}
+@media only screen and (max-width: 833px) {
+  .min-wrapper-flex {
+    flex-direction: column;
+  }
+}
+.min-wrapper-flex-item {
+  flex: 1;
+}
+
+/* ==========================================================================
     Form
 ========================================================================== */
 
@@ -4712,16 +4729,12 @@ h2 span::after {
 }
 
 .min-page-header {
-  margin-top: 14rem;
+  margin-top: 23.4rem;
 }
 
 /* ==========================================================================
     404
 ========================================================================== */
-
-.notfound-container {
-  margin-bottom: 16rem;
-}
 
 .notfound-wrapper {
   display: flex;

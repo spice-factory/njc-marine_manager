@@ -48,7 +48,7 @@
 
     <main class="l-main contact-container">
       <div class="min-page-header">
-      <h1 class="headtitle fadeIn contact-ttl">CONTACT</h1>
+      <h1 class="headtitle fadeIn contact-ttl">Contact</h1>
         <h2>
             <div class="solution-text-h2 pc contact-ttl">
                 <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
