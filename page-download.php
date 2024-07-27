@@ -45,29 +45,44 @@
         </a>
       </h1>
     </header>
-
-    <main class="l-main contact-container">
-      <div class="min-page-header">
-      <h1 class="headtitle fadeIn contact-ttl">Contact</h1>
-        <h2>
-            <div class="solution-text-h2 pc contact-ttl">
-                <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
+    <main class="l-main download-container">
+      <div class="page-header container notfound-container">
+          <div class="min-wrapper min-wrapper-flex">
+            <div class="min-wrapper-flex-item">
+              <div class="headtitle fadeIn">Download</div>
+              <h2>
+                  <div class="pc">
+                      <div class="title-h2 hidden">
+                          <span class="slideUp"><span>資料ダウンロード</span></span>
+                      </div>
+                  </div>
+                  <div class="tab">
+                      <div class="title-h2 hidden">
+                          <span class="slideUp"><span>資料ダウンロード</span></span>
+                      </div>
+                  </div>
+                  <div class="sp">
+                      <div class="title-h2 hidden">
+                          <span class="slideUp"><span>資料ダウンロード</span></span>
+                      </div>
+                  </div>
+              </h2>
+              <figure class="download-thumb">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/Dummy.jpg">
+              </figure>
+              <div class="download-contents">
+                <h3 class="download-ttl">この資料の内容</h3>
+                <?php the_content(); ?>
+              </div>
             </div>
-            <div class="solution-text-h2 tab contact-ttl">
-                <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
+            <div class="min-wrapper-flex-item">
+              <iframe src="https://go.njc.co.jp/l/278662/2024-07-22/rs67v" width="100%" height="1270" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
             </div>
-            <div class="solution-text-h2 sp contact-ttl">
-                <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
-            </div>
-        </h2>
-        <div class="contact-wrapper">
-          <iframe src="https://go.njc.co.jp/l/278662/2024-07-22/rs67n" width="100%" height="1166" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
-        </div>
+          </div>
       </div>
     </main>
-
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/contact.js"></script>
-  <?php get_footer(); ?>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/download.js"></script>
+<?php get_footer(); ?>

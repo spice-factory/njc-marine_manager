@@ -23,7 +23,7 @@
   </div>
 </div>
 
-<?php elseif(!is_404() && !is_post_type_archive('download')): ?>
+<?php elseif(!is_404() && !is_page('contact') && !is_page('download')): ?>
 <div class="top-cta div-section">
   <div class="container">
     <div class="min-wrapper">
@@ -55,13 +55,16 @@
     <div class="l-footerlNavi__inner">
       <ul class="l-footerlNaviMain">
         <li class="footerlNaviMain__item">
-          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/about/">MarineManagerについて</a>
+          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/about/">私たちの想い</a>
         </li>
         <li class="footerlNaviMain__item">
-          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/solution/">活用方法</a>
+          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/solution/">プラスレックにできること</a>
         </li>
         <li class="footerlNaviMain__item">
           <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/magazine/">マガジン</a>
+        </li>
+        <li class="footerlNaviMain__item">
+          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/case/">事例</a>
         </li>
         <li class="footerlNaviMain__item">
           <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/news/">お知らせ</a>
@@ -103,7 +106,6 @@
   </div>
   <p class="footer-copyright">© 2021 Nippon Jimuki Co., Ltd.</p>
 </footer>
-</div>
 <?php wp_footer(); ?>
 </body>
 
