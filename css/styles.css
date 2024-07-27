@@ -3642,31 +3642,26 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   padding: 3.2rem;
-  width: 100%;
-  height: 40rem;
   background-position: center;
   border-radius: 1.6rem;
+  aspect-ratio: 1 / 1;
+  position: relative;
 }
 
-.case-link.case01 {
-  background-image: -webkit-image-set(
-    url(.././img/pages/solution/case-bg-01.png) 1x,
-    url(.././img/pages/solution/case-bg-01@2x.png) 2x
-  );
+.case-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
-.case-link.case02 {
-  background-image: -webkit-image-set(
-    url(.././img/pages/solution/case-bg-02.png) 1x,
-    url(.././img/pages/solution/case-bg-02@2x.png) 2x
-  );
-}
-
-.case-link.case03 {
-  background-image: -webkit-image-set(
-    url(.././img/pages/solution/case-bg-03.png) 1x,
-    url(.././img/pages/solution/case-bg-03@2x.png) 2x
-  );
+.case-thumb > img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .case-link-txt-wrapper {
@@ -3736,9 +3731,10 @@ footer {
   }
 
   .case-link {
-    flex: auto;
-    height: auto;
+    /* flex: auto; */
+    /* height: auto; */
     gap: 1.6rem;
+    aspect-ratio: inherit;
   }
 
   .case-link-container {

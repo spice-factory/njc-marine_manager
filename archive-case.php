@@ -40,6 +40,15 @@
                   <?php while($cases->have_posts()): ?>
                     <?php $cases->the_post(); ?>
                     <a href="<?php the_permalink(); ?>" class="case-link case<?php echo sprintf('%02d', $case_number); ?>">
+                        <figure class="case-thumb">
+                          <?php $featured_img = get_field('featured_img'); ?>
+                          <?php if(!empty($featured_img)): ?>
+                          <img src="<?php echo esc_url($featured_img['url']); ?>" alt="thumbnail">
+                          <?php else: ?>
+                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pages/magazine_Detail/magazine_general.png"
+                            alt="thumbnail">
+                          <?php endif; ?>
+                        </figure>
                         <div class="case-link-txt-wrapper">
                             <span>Case<?php echo sprintf('%02d', $case_number); ?></span>
                             <p class="case-link-title"><?php echo get_the_title(); ?></p>
