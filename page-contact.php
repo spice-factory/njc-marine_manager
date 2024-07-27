@@ -61,21 +61,13 @@
             </div>
         </h2>
         <div class="contact-wrapper">
-          <iframe src="https://go.njc.co.jp/l/278662/2024-07-22/rs67n" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+          <iframe src="https://go.njc.co.jp/l/278662/2024-07-22/rs67n" width="100%" height="1166" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
         </div>
       </div>
     </main>
 
   </div>
-
-  <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('iframe').setAttribute('height', 1400);
-  });
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/contact.js"></script>
-</body>
-
-</html>
+  <?php get_footer(); ?>

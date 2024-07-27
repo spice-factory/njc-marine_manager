@@ -4705,6 +4705,17 @@ footer {
 /* ==========================================================================
     download
 ========================================================================== */
+.download-container h2 span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -0.4rem;
+  background: #001450;
+  height: 0.3rem;
+  width: 0%;
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
 .min-wrapper-flex {
   display: flex;
   flex-direction: row;
@@ -4718,15 +4729,18 @@ footer {
 .min-wrapper-flex-item {
   flex: 1;
 }
+.download-thumb {
+  margin-bottom: 3.2rem;
+}
+.download-contents ul {
+  margin-top: 1.6rem;
+  padding-left: 2rem;
+  list-style-type: disc;
+}
 
 /* ==========================================================================
     Form
 ========================================================================== */
-
-.contact-wrapper iframe {
-  width: 100%;
-  height: calc(100vh - 15.2rem);
-}
 
 .min-page-header {
   margin-top: 23.4rem;
