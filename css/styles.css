@@ -4676,6 +4676,33 @@ footer {
 } */
 
 /* ==========================================================================
+    CONTACT
+========================================================================== */
+.contact-container {
+  max-width: 916px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -0.4rem;
+  background: #001450;
+  height: 0.3rem;
+  width: 0%;
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+
+.contact-ttl {
+  width: calc(90% - 10px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
     Form
 ========================================================================== */
 

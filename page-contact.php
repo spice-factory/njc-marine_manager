@@ -46,8 +46,20 @@
       </h1>
     </header>
 
-    <main class="l-main page-container">
+    <main class="l-main contact-container">
       <div class="min-page-header">
+      <h1 class="headtitle fadeIn contact-ttl">CONTACT</h1>
+        <h2>
+            <div class="solution-text-h2 pc contact-ttl">
+                <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
+            </div>
+            <div class="solution-text-h2 tab contact-ttl">
+                <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
+            </div>
+            <div class="solution-text-h2 sp contact-ttl">
+                <div class="title-h2 hidden"><span class="slideUp"><span>お問い合わせ</span></span></div>
+            </div>
+        </h2>
         <div class="contact-wrapper">
           <iframe src="https://go.njc.co.jp/l/278662/2024-07-22/rs67n" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
         </div>
