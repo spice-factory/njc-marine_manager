@@ -81,14 +81,12 @@
             <a href="!#" class="cat-<?php echo $cat->slug; ?> cat-item" data-slug="<?php echo $cat->slug; ?>">
               <?php if($cat->slug == 'minato'): ?>
               <?php get_template_part('svg/cat_minato'); ?>
+              <p><?php echo $cat->name; ?></p>
 
               <?php elseif($cat->slug == 'story'): ?>
               <?php get_template_part('svg/cat_story'); ?>
-
-              <?php elseif($cat->slug == 'case'): ?>
-              <?php get_template_part('svg/cat_case'); ?>
-              <?php endif; ?>
               <p><?php echo $cat->name; ?></p>
+              <?php endif; ?>
             </a>
           </li>
 

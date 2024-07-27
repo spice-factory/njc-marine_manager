@@ -13,19 +13,11 @@
         <div class="article-wrapper">
             <div class="article-detail-title">
                 <div class="article-cat-tag">
-                  <?php
-                    $terms = get_the_terms( get_the_ID(), 'case_category' );
-                    if ( $terms && ! is_wp_error( $terms ) ) :
-                      $genre_list = array();
-                      foreach ( $terms as $term ) :
-                  ?>
-                  <span class="<?php echo esc_attr( $term->slug ); ?>">
-                    <?php echo esc_html( $term->name ); ?>
-                  </span>
-                  <?php
-                    endforeach;
-                    endif;
-                  ?>
+                  <?php if(!empty($cats)): ?>
+                  <?php foreach($cats as $cat): ?>
+                  <span class="<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></span>
+                  <?php endforeach; ?>
+                  <?php endif; ?>
                     <div class="article-tag">
                     <?php if(!empty($tags)): ?>
                     <?php foreach($tags as $tag): ?>
@@ -128,23 +120,25 @@
                         <div class="article-detail">
                             <div class="article-date-category">
                               <p><?php echo get_the_date('Y.m.d'); ?></p>
-                              <?php
-                                $terms = get_the_terms( get_the_ID(), 'case_category' );
-                                if ( $terms && ! is_wp_error( $terms ) ) :
-                                  $genre_list = array();
-                                  foreach ( $terms as $term ) :
-                              ?>
-                              <span class="<?php echo esc_attr( $term->slug ); ?>">
-                                <?php echo esc_html( $term->name ); ?>
-                              </span>
-                              <?php
-                                endforeach;
-                                endif;
-                              ?>
+                              <?php if(!empty($post_cats)): ?>
+                              <?php foreach($post_cats as $post_cat): ?>
+                              <span class="<?php echo $post_cat->slug; ?>"><?php echo $post_cat->name; ?></span>
+                              <?php endforeach; ?>
+                              <?php endif; ?>
                             </div>
                             <h3 class="article-title">
                               <?php echo get_the_title(); ?>
                             </h3>
+                            <div class="article-tag">
+                              <?php if(!empty(get_the_tags())):
+                                $tags = get_the_tags();
+                                ?>
+                              <?php foreach($tags as $post_tag): ?>
+                              <span class="<?php echo $post_tag->slug; ?>"><a
+                                  href="<?php echo home_url('/magazine/'); ?>"><?php echo $post_tag->name; ?></a></span>
+                              <?php endforeach; ?>
+                              <?php endif; ?>
+                            </div> 
                         </div>
                     </li>
                     <?php endwhile; ?>
