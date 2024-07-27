@@ -49,8 +49,7 @@
     <main class="l-main page-container">
       <div class="min-page-header">
         <div class="contact-wrapper">
-          <iframe src="https://go.njc.co.jp/l/278662/2021-10-21/jxzhx" width="100%" height="500" type="text/html"
-            frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+          <iframe src="https://go.njc.co.jp/l/278662/2024-07-22/rs67n" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
         </div>
       </div>
     </main>
