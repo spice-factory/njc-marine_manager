@@ -3658,6 +3658,7 @@ footer {
 }
 
 .case-thumb > img {
+  border-radius: 16px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
