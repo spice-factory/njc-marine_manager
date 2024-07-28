@@ -591,6 +591,10 @@ h2 span::after {
   text-align: center;
 }
 
+.center-btn--bottom {
+  margin-bottom: 16rem;
+}
+
 .wrapper {
   max-width: 144rem;
   margin: 0 auto;
