@@ -3282,7 +3282,7 @@ footer {
   display: flex;
   -webkit-column-gap: 3.2rem;
   -moz-column-gap: 3.2rem;
-  column-gap: 3.2rem;
+  column-gap: 9.2rem;
 }
 
 .page-header .solution-text-h2 {
