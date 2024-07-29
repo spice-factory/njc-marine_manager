@@ -105,12 +105,6 @@
                 <?php $recommended->the_post(); ?>
                 <?php
                   $post_cats = get_the_category();
-
-                  // For adding "New" tag in post
-                  date_default_timezone_set('Asia/Tokyo');
-                  $posted = strtotime($post->post_date);
-                  $current_time = strtotime('now');
-                  $one_week_since_posted = strtotime(date('Y-m-d H:i:s', $posted) . '+1 week');
                 ?>
                     <li class="artileListp-item-li">
                       <a href="<?php echo get_permalink(); ?>" class="article-permalink"><?php echo get_the_title(); ?></a>
@@ -124,15 +118,6 @@
                             alt="thumbnail">
                           <?php endif; ?>
                         </figure>
-                        <div class="new-item">
-                          <svg viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M30.2079 0.0160416C39.724 0.36306 46.6604 7.67142 52.709 14.8494C58.9211 22.2213 65.3207 30.4132 63.763 39.836C62.1084 49.8457 54.2412 57.698 44.8942 62.1241C35.5108 66.5675 24.3419 67.684 15.1637 62.8495C6.39343 58.2299 2.67728 48.4637 0.81904 38.908C-0.935146 29.8874 -0.089339 20.5172 5.4946 13.1276C11.3496 5.37934 20.35 -0.343445 30.2079 0.0160416Z" fill="white"/>
-                              <path d="M10.2505 39.9999V29.3599H12.6725L17.5166 35.8559V29.3599H20.0926V39.9999H17.6705L12.8265 33.4899V39.9999H10.2505Z" fill="#0046DC"/>
-                              <path d="M22.3091 39.9999V29.3599H29.7151V31.5019H24.8991V33.5459H29.1411V35.6879H24.8991V37.8579H29.9111V39.9999H22.3091Z" fill="#0046DC"/>
-                              <path d="M33.998 39.9999L30.848 29.3599H33.83L35.398 36.4439L37.358 29.4999H39.766L41.754 36.3179L43.2941 29.3599H46.2621L43.112 39.9999H40.55L38.534 33.1679L36.574 39.9999H33.998Z" fill="#0046DC"/>
-                              <path d="M48.0635 36.3319L47.8115 28.9399H50.5835L50.3315 36.3319H48.0635ZM49.1975 40.0839C48.7681 40.0839 48.4228 39.9579 48.1615 39.7059C47.9001 39.4539 47.7695 39.1319 47.7695 38.7399C47.7695 38.3479 47.9001 38.0306 48.1615 37.7879C48.4228 37.5359 48.7681 37.4099 49.1975 37.4099C49.6175 37.4099 49.9581 37.5359 50.2195 37.7879C50.4901 38.0306 50.6255 38.3479 50.6255 38.7399C50.6255 39.1319 50.4901 39.4539 50.2195 39.7059C49.9581 39.9579 49.6175 40.0839 49.1975 40.0839Z" fill="#0046DC"/>
-                          </svg> 
-                        </div>
                         <div class="article-detail">
                             <div class="article-date-category">
                               <p><?php echo get_the_date('Y.m.d'); ?></p>
