@@ -639,3 +639,16 @@ function get_theme_image_srcset($atts) {
   return '';
 }
 add_shortcode('theme_img_srcset', 'get_theme_image_srcset');
+
+function home_url_shortcode($atts) {
+  $atts = shortcode_atts(
+      array(
+          'path' => '',
+      ),
+      $atts,
+      'home_url'
+  );
+
+  return home_url($atts['path']);
+}
+add_shortcode('home_url', 'home_url_shortcode');

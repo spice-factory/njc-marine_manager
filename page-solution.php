@@ -19,7 +19,7 @@ endif;
 </div>
 <div class="center-btn center-btn--bottom">
     <div class="readmore-btn">
-      <a href="./magazine.html">
+      <a href="<?php echo home_url('/case/'); ?>">
         <p>活用事例をみる</p>
         <svg
           width="30"
