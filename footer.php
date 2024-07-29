@@ -1,27 +1,5 @@
 <?php if(is_page_template('template-thanks.php')):?>
-<?php elseif(is_front_page()): ?>
-<div class="top-cta div-section">
-  <div class="container">
-    <div class="wrapper">
-      <div class="top-cta-wrapper">
-        <a href="<?php echo site_url(); ?>/contact/">
-          <div class="contact fadeUp">
-            <p class="ttl">お問い合わせ</p>
-            <p>資料請求など、<br class="br-sp">まずはお気軽にお問い合わせください。</p>
-            <?php get_template_part('svg/arrow_cta_contact'); ?>
-          </div>
-        </a>
-        <a href="#" class="link-none">
-          <div class="login fadeUp">
-            <p class="ttl">ログイン</p>
-            <p>coming soon...</p>
-            <?php get_template_part('svg/arrow_cta_login'); ?>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <?php elseif(!is_404() && !is_page('contact') && !is_page('download')): ?>
 <div class="top-cta div-section">
