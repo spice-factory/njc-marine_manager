@@ -4694,6 +4694,9 @@ footer {
 /* ==========================================================================
     download
 ========================================================================== */
+.download-container {
+  margin-top: 19.5rem;
+}
 .download-container h2 span::after {
   position: absolute;
   content: "";
@@ -4710,13 +4713,11 @@ footer {
   flex-direction: row;
   gap: 27.6px;
 }
-@media only screen and (max-width: 833px) {
-  .min-wrapper-flex {
-    flex-direction: column;
-  }
-}
 .min-wrapper-flex-item {
   flex: 1;
+}
+.min-wrapper-flex-item:nth-of-type(1) {
+  margin-top: 3.9rem;
 }
 .download-thumb {
   margin-bottom: 3.2rem;
@@ -4726,6 +4727,17 @@ footer {
   padding-left: 2rem;
   list-style-type: disc;
 }
+@media only screen and (max-width: 833px) {
+  .min-wrapper-flex {
+    flex-direction: column;
+  }
+  .min-wrapper-flex-item:nth-of-type(1) {
+    margin-top: inherit;
+  }
+  .download-container {
+    margin-top: 20rem;
+  }
+}
 
 /* ==========================================================================
     Form
@@ -4733,6 +4745,11 @@ footer {
 
 .min-page-header {
   margin-top: 23.4rem;
+}
+@media only screen and (max-width: 833px) {
+  .min-page-header {
+    margin-top: 20rem;
+  }
 }
 
 /* ==========================================================================

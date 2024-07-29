@@ -46,7 +46,7 @@
       </h1>
     </header>
     <main class="l-main download-container">
-      <div class="page-header container notfound-container">
+      <div class="page-header container download-container">
           <div class="min-wrapper min-wrapper-flex">
             <div class="min-wrapper-flex-item">
               <div class="headtitle fadeIn">Download</div>
