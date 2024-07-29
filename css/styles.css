@@ -3287,6 +3287,7 @@ footer {
   -webkit-column-gap: 3.2rem;
   -moz-column-gap: 3.2rem;
   column-gap: 9.2rem;
+  justify-content: center;
 }
 
 .page-header .solution-text-h2 {
@@ -3627,6 +3628,11 @@ footer {
   font-weight: 700;
   text-align: left;
 }
+
+/* .case-link-container-outer {
+  max-width: 144rem;
+  margin: 0 auto;
+} */
 
 .case-link-container {
   margin-top: 8rem;

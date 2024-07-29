@@ -14,7 +14,9 @@ if (have_posts()):
   else :
 endif;
 ?>
-<?php get_template_part('template-parts/cases'); ?>
+<div class="container">
+  <?php get_template_part('template-parts/cases'); ?>
+</div>
 <div class="center-btn center-btn--bottom">
     <div class="readmore-btn">
       <a href="./magazine.html">
