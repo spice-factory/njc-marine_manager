@@ -4772,6 +4772,14 @@ footer {
   width: 37rem;
 }
 
+.fix-mt {
+  margin-bottom: 0;
+}
+
+.fix-mb {
+  margin-bottom: 16rem;
+}
+
 /* Tablet */
 @media only screen and (max-width: 833px) {
   .notfound-wrapper {

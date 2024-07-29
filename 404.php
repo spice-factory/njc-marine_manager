@@ -2,13 +2,13 @@
 
 <main class="l-main page-container">
   <div class="page-header container notfound-container">
-    <div class="min-wrapper notfound-wrapper">
+    <div class="min-wrapper notfound-wrapper fix-mb">
       <div class="notfound-text">
 
         <div class="headtitle fadeIn">404 Page Not Found</div>
 
         <h2>
-          <div class="top-about-text-h2 pc">
+          <div class="pc fix-mt">
             <div class="title-h2 hidden">
               <span class="slideUp"><span>お探しのページが</span></span>
             </div>
@@ -16,7 +16,7 @@
               <span class="slideUp"><span>見つかりませんでした。</span></span>
             </div>
           </div>
-          <div class="top-about-text-h2 tab">
+          <div class="tab">
             <div class="title-h2 hidden">
               <span class="slideUp"><span>お探しのページが、</span></span>
             </div>
@@ -24,7 +24,7 @@
               <span class="slideUp"><span>見つかりませんでした。</span></span>
             </div>
           </div>
-          <div class="top-about-text-h2 sp">
+          <div class="sp">
             <div class="title-h2 hidden">
               <span class="slideUp"><span>お探しのページが、</span></span>
             </div>
