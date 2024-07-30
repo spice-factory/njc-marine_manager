@@ -1849,11 +1849,11 @@ footer {
   justify-content: space-between;
   top: 50%;
   z-index: 10;
-  transform: translateY(-50%);
   width: 100%;
 }
 .top-pagination {
   position: absolute;
+  transform: translateY(-50%);
 }
 
 .prev,
