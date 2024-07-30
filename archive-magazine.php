@@ -166,13 +166,13 @@
       <div class=" min-wrapper">
         <div class="pagination magazine-pagination">
           <a href="#" data-clicked='prev'>
-            <div class="prev">
+            <div class="prev magazine-prev">
               <?php get_template_part('svg/solution_arrow_prev'); ?>
               <span>PREV</span>
             </div>
           </a>
           <a href="#" data-clicked='next'>
-            <div class="next">
+            <div class="next magazine-next">
               <span>NEXT</span>
               <?php get_template_part('svg/solution_arrow_next'); ?>
             </div>

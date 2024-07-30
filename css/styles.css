@@ -1865,16 +1865,21 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  background: #001450;
   padding: 1.2rem 2.4rem;
   border-radius: 4rem;
+}
+.top-prev, .top-next {
+  background: #001450;
+  color: #fff;
+}
+.magazine-prev, .magazine-next {
+  color: #001450;
 }
 
 .pagination span {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0 0.8rem;
-  color: #fff;
 }
 
 .prev svg,
