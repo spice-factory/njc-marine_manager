@@ -2647,10 +2647,10 @@ footer {
 }
 
 .swiper-pagination {
-  height: 0.2rem !important;
+  /* height: 0.2rem !important;
   width: 85% !important;
   top: auto !important;
-  bottom: 1.7rem !important;
+  bottom: 1.7rem !important; */
 }
 
 .swiper-pagination-progressbar {
@@ -2704,7 +2704,7 @@ footer {
   }
 
   .swiper-pagination {
-    width: 70% !important;
+    /* width: 70% !important; */
   }
 
   .value-img {
@@ -2753,7 +2753,7 @@ footer {
   }
 
   .swiper-pagination {
-    width: 60% !important;
+    /* width: 60% !important; */
   }
 }
 
@@ -4718,6 +4718,10 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 27.6px;
+}
+.min-wrapper-flex-item-container {
+  width: calc(90% - 14px);
+  margin: 0 auto;
 }
 .min-wrapper-flex-item {
   flex: 1;

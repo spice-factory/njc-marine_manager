@@ -65,7 +65,7 @@
             </a>
 
             <div class="single-pager">
-                <a href="<?php echo site_url(); ?>/magazine/">
+                <a href="<?php echo site_url(); ?>/case/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M12.9458 2.9292L5.875 10L12.9458 17.0709L14.125 15.8917L8.23167 10L14.125 4.10753L12.9458 2.9292Z" fill="white"/>
                     </svg>                              

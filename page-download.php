@@ -46,9 +46,9 @@
       </h1>
     </header>
     <main class="l-main download-container">
-      <div class="page-header container download-container">
+      <div class="page-header download-container">
           <div class="min-wrapper min-wrapper-flex">
-            <div class="min-wrapper-flex-item">
+            <div class="min-wrapper-flex-item min-wrapper-flex-item-container">
               <div class="headtitle fadeIn">Download</div>
               <h2>
                   <div class="pc">

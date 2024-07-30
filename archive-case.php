@@ -25,7 +25,7 @@
   </section>
 
   <section class="next-link reveal">
-      <a href="./about.html">
+      <a href="<?php echo home_url('/about/'); ?>">
           <div class="next-link-wrapper next-about">
               <div class="wrapper next-link-area">
                 <div class="next-link-text">
