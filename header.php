@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="l-glovalNavi__inner">
         <ul class="l-globalNaviMain">
           <li class="globalNaviMain__item <?php echo ($page_slug == 'about') ? 'is-current' : ''; ?>">
-            <a class="globalNaviMain__item-link" href="<?php echo site_url(); ?>/about/">私たちの想い</a>
+            <a class="globalNaviMain__item-link" href="<?php echo site_url(); ?>/about/">私たちの思い</a>
           </li>
           <li class="globalNaviMain__item <?php echo ($page_slug == 'solution') ? 'is-current' : ''; ?>">
             <a class="globalNaviMain__item-link" href="<?php echo site_url(); ?>/solution/">プラスレックにできること</a>

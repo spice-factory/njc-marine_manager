@@ -68,7 +68,9 @@
                   </div>
               </h2>
               <figure class="download-thumb">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/common/Dummy.jpg">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pages/download/download_img.png"
+              srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/pages/download/download_img.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/img/pages/download/download_img.png 2x"
+              alt="point image">
               </figure>
               <div class="download-contents">
                 <h3 class="download-ttl">この資料の内容</h3>

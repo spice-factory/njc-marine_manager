@@ -33,7 +33,7 @@
     <div class="l-footerlNavi__inner">
       <ul class="l-footerlNaviMain">
         <li class="footerlNaviMain__item">
-          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/about/">私たちの想い</a>
+          <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/about/">私たちの思い</a>
         </li>
         <li class="footerlNaviMain__item">
           <a class="footerlNaviMain__item-link" href="<?php echo site_url(); ?>/solution/">プラスレックにできること</a>
