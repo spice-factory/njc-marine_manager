@@ -461,7 +461,7 @@
         <div class="headtitle fadeIn">Why Smart Fisheries?</div>
         <div class="top-about-text-h2">
           <div class="title-h2 hidden">
-            <h2 class="slideUp"><span>スマート水産業とは</span></h2>
+            <h2 class="slideUp"><span>スマート水産業とは。</span></h2>
           </div>
         </div>
       </div>
