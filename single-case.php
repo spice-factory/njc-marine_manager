@@ -18,11 +18,12 @@
                   <span class="<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></span>
                   <?php endforeach; ?>
                   <?php endif; ?>
-                    <div class="article-tag">
+                  <div class="article-tag">
                     <?php if(!empty($tags)): ?>
                     <?php foreach($tags as $tag): ?>
-                    <span class="<?php echo $tag->slug; ?>"><a
-                        href="<?php echo home_url(); ?>/magazine/?ajax=<?php echo $tag->slug; ?>"><?php echo $tag->name; ?></a></span>
+                    <span class="<?php echo $tag->slug; ?>">
+                      <a href="<?php echo home_url(); ?>/magazine/?ajax=<?php echo $tag->slug; ?>"><?php echo $tag->name; ?></a>
+                    </span>
                     <?php endforeach; ?>
                     <?php endif; ?>
                   </div>
@@ -30,9 +31,6 @@
                 <h1><?php echo get_the_title($post->ID); ?></h1>
                 <p><?php echo get_the_date('Y.m.d'); ?></p>                        
             </div>
-            <!-- <figure class="article-img">
-                <img src="./img/common/dummy01.jpeg" alt="article img">
-            </figure> -->
 
             <div class="artilcle-block">
                 <?php if(get_field('add_summary')[0] == "add_summ"): ?>
@@ -92,9 +90,9 @@
                   $args = array(
                     'post_type'      => 'case',
                     'posts_per_page' => 3,
-                    'category__not_in' => array( get_cat_ID('uncategorized') ),
+                    'meta_key' 		 => 'wpb_post_views_count',
+                    'orderby' 		 => 'meta_value_num',
                     'order'          => 'ASC',
-                    'orderby'        => 'date',
                     'post__not_in'	 => array($post->ID),
                   );
                   $recommended = custom_query($args);
@@ -135,7 +133,7 @@
                                 ?>
                               <?php foreach($tags as $post_tag): ?>
                               <span class="<?php echo $post_tag->slug; ?>"><a
-                                  href="<?php echo home_url('/magazine/'); ?>"><?php echo $post_tag->name; ?></a></span>
+                                  href="<?php echo home_url(); ?>/magazine/?ajax=<?php echo $post_tag->slug; ?>"><?php echo $post_tag->name; ?></a></span>
                               <?php endforeach; ?>
                               <?php endif; ?>
                             </div> 

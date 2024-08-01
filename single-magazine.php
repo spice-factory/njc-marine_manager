@@ -30,9 +30,6 @@
                 <h1><?php echo get_the_title($post->ID); ?></h1>
                 <p><?php echo get_the_date('Y.m.d'); ?></p>                        
             </div>
-            <!-- <figure class="article-img">
-                <img src="./img/common/dummy01.jpeg" alt="article img">
-            </figure> -->
 
             <div class="artilcle-block">
                 <?php if(get_field('add_summary')[0] == "add_summ"): ?>
