@@ -6,68 +6,76 @@
  * @param string $user_login .
  * @param array $user_obj
  */
-function custom_login_notification($user_login, $user_obj){
-	include "/home/kusanagi/mail_notification/njc_mail_environment.php";
-	$default_tz = date_default_timezone_get();
-	date_default_timezone_set('Asia/Tokyo');
-	$now = date('Y-m-d H:i:s');
-	date_default_timezone_set($default_tz);
-	$contents = "本番環境マリンマネージャサイトWordPressに新規ログインがありました\n\n";
-	$contents .= "[日時] {$now}\n";
-	$contents .= "[アカウント] {$user_login} : {$user_obj->data->user_email}";
-	$mail_body = array(
-		"personalizations" => array(
-			array(
-				"to" => array(
-					array(
-						"email" => $mail_to,
-					)
-				),
-				"cc" => array(
-					array(
-						"email" => $mail_cc,
-					)	
-				),
-				"subject" => $subject_marinemanager
-			)
-		),
-		"from" => array(
-			"email" => $mail_from,
-			"name" => $from_name
-		),
-		"content" => array(
-			array(
-				"type" => "text/plain",
-				"value" => $contents
-			)
-		)
-	);
-	$mail_body = json_encode($mail_body);
+function custom_login_notification($user_login, $user_obj) {
+  include "/home/kusanagi/mail_notification/njc_mail_environment.php";
+  $default_tz = date_default_timezone_get();
+  date_default_timezone_set('Asia/Tokyo');
+  $now = date('Y-m-d H:i:s');
+  date_default_timezone_set($default_tz);
 
-	$options = array(
-		CURLOPT_URL => $endpoint,
-		CURLOPT_HTTPHEADER => $request_header,
-		CURLOPT_POST => true,
-		CURLOPT_POSTFIELDS => $mail_body,
-		CURLOPT_RETURNTRANSFER => true,
-	);
+  $contents = "本番環境マリンマネージャサイトWordPressに新規ログインがありました\n\n";
+  $contents .= "[日時] {$now}\n";
+  $contents .= "[アカウント] {$user_login} : {$user_obj->data->user_email}";
 
-	$ch = curl_init();
-	curl_setopt_array($ch, $options);
+  $mail_body = array(
+      "personalizations" => array(
+          array(
+              "to" => array(
+                  array(
+                      "email" => $mail_to,
+                  )
+              ),
+              "cc" => array(
+                  array(
+                      "email" => $mail_cc,
+                  )
+              ),
+              "subject" => $subject_marinemanager
+          )
+      ),
+      "from" => array(
+          "email" => $mail_from,
+          "name" => $from_name
+      ),
+      "content" => array(
+          array(
+              "type" => "text/plain",
+              "value" => $contents
+          )
+      )
+  );
+  $mail_body = json_encode($mail_body);
 
-	$resp = curl_exec($ch);
+  // ヘッダーを配列として設定する
+  $request_header = array(
+      'Content-Type: application/json',
+  );
 
-	if(curl_errno($ch)){
-		$err_msg = "";
-		foreach(curl_getinfo($ch) as $key => $val){
-			$err_msg .= $val . "\n";
-		}
-		file_put_contents("/tmp/custom_login.txt", $err_msg . "\n\n", FILE_APPEND | LOCK_EX);
-	}	
+  $options = array(
+      CURLOPT_URL => $endpoint,
+      CURLOPT_HTTPHEADER => $request_header,
+      CURLOPT_POST => true,
+      CURLOPT_POSTFIELDS => $mail_body,
+      CURLOPT_RETURNTRANSFER => true,
+  );
 
-	curl_close($ch);
+  $ch = curl_init();
+  curl_setopt_array($ch, $options);
+
+  $resp = curl_exec($ch);
+
+  if (curl_errno($ch)) {
+      $err_msg = "";
+      foreach (curl_getinfo($ch) as $key => $val) {
+          $err_msg .= $key . ': ' . $val . "\n";
+      }
+      file_put_contents("/tmp/custom_login.txt", $err_msg . "\n\n", FILE_APPEND | LOCK_EX);
+  }
+
+  curl_close($ch);
 }
 add_action('wp_login', 'custom_login_notification', 10, 2);
+
 
 /**
  * WP高速化系・セキュリティ向上系記述
