@@ -24,7 +24,7 @@
       </div>
   </section>
 
-  <section class="next-link reveal">
+<section class="next-link reveal">
   <a href="<?php echo home_url('/magazine/'); ?>">
     <div class="next-link-wrapper next-magazine">
       <div class="wrapper next-link-area">
