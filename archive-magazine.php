@@ -200,44 +200,44 @@
 </section>
 
 <section class="next-link reveal">
-  <a href="<?php echo home_url('/magazine/'); ?>">
-    <div class="next-link-wrapper next-magazine">
+  <a href="<?php echo site_url(); ?>/about/">
+    <div class="next-link-wrapper next-about">
       <div class="wrapper next-link-area">
         <div class="next-link-text">
-          <div class="headtitle fadeIn">Magazine</div>
+          <div class="headtitle fadeIn">About MarineManager</div>
           <h2>
-            <div class="top-about-text-h2 pc">
+            <spam class="top-about-text-h2 pc">
               <div class="title-h2 hidden">
-                <span class="slideUp-2 ttl"><span>今よりも、</span></span>
+                <span class="slideUp-2 ttl"><span>これからもずっと豊かな海と笑顔を</span></span>
               </div>
               <div class="title-h2 hidden">
-                <span class="slideUp-2 ttl"
-                  ><span>もっともっと良い未来へ</span></span
-                >
+                <span class="slideUp-2 ttl"><span>まもり・つくり・つなげる</span></span>
               </div>
-            </div>
-            <div class="top-about-text-h2 tab">
+            </spam>
+            <spam class="top-about-text-h2 tab">
               <div class="title-h2 hidden">
-                <span class="slideUp-2 ttl"><span>今よりも、</span></span>
+                <span class="slideUp-2 ttl"><span>これからもずっと</span></span>
               </div>
               <div class="title-h2 hidden">
-                <span class="slideUp-2 ttl"
-                  ><span>もっともっと良い未来へ</span></span
-                >
-              </div>
-            </div>
-            <div class="top-about-text-h2 sp">
-              <div class="title-h2 hidden">
-                <span class="slideUp-2 ttl"
-                  ><span>今よりも、もっともっと</span></span
-                >
+                <span class="slideUp-2 ttl"><span>豊かな海と笑顔を</span></span>
               </div>
               <div class="title-h2 hidden">
-                <span class="slideUp-2 ttl"><span>良い未来へ</span></span>
+                <span class="slideUp-2 ttl"><span>まもり・つくり・つなげる</span></span>
               </div>
-            </div>
+            </spam>
+            <spam class="top-about-text-h2 sp">
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"><span>これからもずっと</span></span>
+              </div>
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"><span>豊かな海と笑顔を</span></span>
+              </div>
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"><span>まもり・つくり・つなげる</span></span>
+              </div>
+            </spam>
           </h2>
-          <h3 class="fadeIn">マガジン</h3>
+          <h3 class="fadeIn">私たちの思い</h3>
         </div>
         <div class="next-button">NEXT</div>
       </div>
