@@ -237,7 +237,7 @@
               </div>
             </spam>
           </h2>
-          <h3 class="fadeIn">MarineManagerについて</h3>
+          <h3 class="fadeIn">私たちの思い</h3>
         </div>
         <div class="next-button">NEXT</div>
       </div>
