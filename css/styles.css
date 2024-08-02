@@ -3545,7 +3545,7 @@ footer {
 }
 
 .case-contets-wrapper {
-  margin: 0 16rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 6.4rem;

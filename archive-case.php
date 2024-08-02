@@ -25,32 +25,50 @@
   </section>
 
   <section class="next-link reveal">
-      <a href="<?php echo home_url('/about/'); ?>">
-          <div class="next-link-wrapper next-about">
-              <div class="wrapper next-link-area">
-                <div class="next-link-text">
-                    <div class="headtitle fadeIn">About Marine Manager</div>
-                    <div class="top-about-text-h2 pc">
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>これからもずっと豊かな海と笑顔を</span></h2></div>
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>まもり・つくり・つなげる</span></h2></div>
-                    </div>
-                    <div class="top-about-text-h2 tab">
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>これからもずっと</span></h2></div>
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>豊かな海と笑顔を</span></h2></div>
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>まもり・つくり・つなげる</span></h2></div>
-                    </div>
-                    <div class="top-about-text-h2 sp">
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>これからもずっと</span></h2></div>
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>豊かな海と笑顔を</span></h2></div>
-                      <div class="title-h2 hidden"><h2 class="slideUp-2"><span>まもり・つくり・つなげる</span></h2></div>
-                    </div>
-                    <h5 class="fadeIn">Marine Managerについて</h5>
-                </div>
-                <div class="next-button">NEXT</div>
+  <a href="<?php echo home_url('/magazine/'); ?>">
+    <div class="next-link-wrapper next-magazine">
+      <div class="wrapper next-link-area">
+        <div class="next-link-text">
+          <div class="headtitle fadeIn">Magazine</div>
+          <h2>
+            <div class="top-about-text-h2 pc">
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"><span>今よりも、</span></span>
+              </div>
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"
+                  ><span>もっともっと良い未来へ</span></span
+                >
+              </div>
             </div>
+            <div class="top-about-text-h2 tab">
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"><span>今よりも、</span></span>
+              </div>
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"
+                  ><span>もっともっと良い未来へ</span></span
+                >
+              </div>
+            </div>
+            <div class="top-about-text-h2 sp">
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"
+                  ><span>今よりも、もっともっと</span></span
+                >
+              </div>
+              <div class="title-h2 hidden">
+                <span class="slideUp-2 ttl"><span>良い未来へ</span></span>
+              </div>
+            </div>
+          </h2>
+          <h3 class="fadeIn">マガジン</h3>
         </div>
-      </a>
-  </section>
+        <div class="next-button">NEXT</div>
+      </div>
+    </div>
+  </a>
+</section>
 
 </main>
 <?php get_footer(); ?>
