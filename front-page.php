@@ -72,7 +72,7 @@
           そこでNJCは、最新のIT技術と「人」中心のビジネスデザインを武器に、<br class="br-pc">スマート水産業の推進、<br class="br-pc">ひいては漁業の持続発展を支援します。
           </p>
           <p class="p-medium">
-          海で陸で、それぞれの持場でたたかう漁業関係者を支える<br class="br-pc">サービスとし「MarineManager」がスタートしました。
+          海で陸で、それぞれの持場でたたかう漁業関係者を支える<br class="br-pc">サービスとして「MarineManager」がスタートしました。
           </p>
         </div>
         <figure class="njc_logo">
@@ -454,7 +454,7 @@
         <div class="headtitle fadeIn">Why Smart Fisheries?</div>
         <div class="top-about-text-h2">
           <div class="title-h2 hidden">
-            <h2 class="slideUp"><span>スマート水産業とは。</span></h2>
+            <h2 class="slideUp"><span>スマート水産業とは</span></h2>
           </div>
         </div>
       </div>
